@@ -4,3 +4,4 @@ kind: Kustomization
 resources:
   - argocd
   - cert-manager
+  - prometheus-community
