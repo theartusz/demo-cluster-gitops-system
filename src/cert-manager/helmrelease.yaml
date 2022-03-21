@@ -12,5 +12,5 @@ spec:
       version: "v1.7.1"
       sourceRef:
         kind: HelmRepository
-        name: jetstack
+        name: cert-manager-jetstack
         namespace: flux-system
