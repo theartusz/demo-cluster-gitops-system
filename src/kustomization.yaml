@@ -6,3 +6,4 @@ resources:
   - cert-manager
   - nginx
   - prometheus-community
+  - namespace.yaml
