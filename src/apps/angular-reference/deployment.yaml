@@ -23,3 +23,5 @@ spec:
             cpu: "500m"
         ports:
         - containerPort: 4200
+      imagePullSecrets:
+        - name: acr-auth
