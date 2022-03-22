@@ -4,6 +4,7 @@ kind: Kustomization
 resources:
   - argocd
   - cert-manager
+  - fluxcd
   - nginx
   - prometheus-community
   - namespace.yaml

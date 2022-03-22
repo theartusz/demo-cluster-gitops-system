@@ -1,0 +1,8 @@
+kind: ImagePolicy
+spec:
+  filterTags:
+    pattern: '^develop-[a-zA-Z0-9]+-(?P<gh_run>.*)'
+    extract: '$gh_run'
+  policy:
+    numerical:
+      order: asc

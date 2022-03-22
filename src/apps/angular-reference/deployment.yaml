@@ -22,6 +22,6 @@ spec:
             memory: "512Mi"
             cpu: "500m"
         ports:
-        - containerPort: 4200
+        - containerPort: 8080 # it doesnt really matter - nginx will catch the request on port 80
       imagePullSecrets:
         - name: acr-auth
