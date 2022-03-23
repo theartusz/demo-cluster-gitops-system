@@ -3,5 +3,5 @@ kind: Kustomization
 
 resources:
   - crd.yaml
-  - helmrelease.yaml
-  - helmrepository.yaml
+  - helmRelease.yaml
+  - helmRepository.yaml
