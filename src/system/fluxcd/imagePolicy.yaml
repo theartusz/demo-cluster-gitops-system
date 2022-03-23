@@ -6,7 +6,7 @@ metadata:
 spec:
   imageRepositoryRef:
     name: angular
-    namespace: flux-system
+    namespace: angular
   filterTags:
     pattern: '^develop-[a-zA-Z0-9]+-(?P<gh_run>.*)'
     extract: '$gh_run'
