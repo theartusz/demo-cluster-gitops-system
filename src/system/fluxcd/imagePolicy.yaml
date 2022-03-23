@@ -8,8 +8,8 @@ spec:
     name: angular
     namespace: angular
   filterTags:
-    pattern: '^develop-[a-zA-Z0-9]+-(?P<gh_run>.*)'
-    extract: '$gh_run'
+    pattern: '^develop-[a-zA-Z0-9]+-(?P<ghrun>.*)'
+    extract: '$ghrun'
   policy:
     numerical:
       order: asc
