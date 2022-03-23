@@ -6,7 +6,6 @@ metadata:
 spec:
   imageRepositoryRef:
     name: angular
-    namespace: angular
   filterTags:
     pattern: '^develop-[a-zA-Z0-9]+-(?P<ghrun>.*)'
     extract: '$ghrun'
