@@ -8,3 +8,4 @@ spec:
   image: argocdtest.azurecr.io/github-evry-bergen/toolbox-reference-angular
   secretRef:
     name: acr-auth
+    namespace: angular
