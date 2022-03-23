@@ -2,7 +2,7 @@ apiVersion: image.toolkit.fluxcd.io/v1beta1
 kind: ImagePolicy
 metadata:
   name: angular
-  namespace: angular
+  namespace: flux-system
 spec:
   imageRepositoryRef:
     name: angular
