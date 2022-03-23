@@ -32,5 +32,4 @@ spec:
       branch: main
   interval: 1m0s
   update:
-    path: ./src/apps
     strategy: Setters
