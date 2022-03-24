@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: angular
-        image: argocdtest.azurecr.io/github-evry-bergen/toolbox-reference-angular:develop-8a150816-12 # {"$imagepolicy": "flux-system:angular"}
+        image: argocdtest.azurecr.io/github-evry-bergen/toolbox-reference-angular:develop-e9c912dd-14 # {"$imagepolicy": "flux-system:angular"}
         resources:
           limits:
             memory: "512Mi"
@@ -24,4 +24,4 @@ spec:
         ports:
         - containerPort: 8080 # it doesnt really matter - port-forward or service should point to port 80 where nginx is listening
       imagePullSecrets:
-        - name: acr-auth
+      - name: acr-auth
