@@ -14,3 +14,5 @@ spec:
         kind: HelmRepository
         name: cert-manager-jetstack
         namespace: flux-system
+  values:
+    installCRDs: true
