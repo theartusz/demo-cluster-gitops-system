@@ -40,6 +40,9 @@ spec:
         paths:
           - /
         pathType: Prefix
+        tls:
+          - hosts: grafana.magnifikboutique.online
+            secretName: grafana-tls
     prometheus:
       ingress:
         enabled: true
