@@ -30,7 +30,7 @@ spec:
         pathType: Prefix
         tls:
           - hosts:
-            - grafana.magnifikboutique.online
+            - alertmanager.magnifikboutique.online
             secretName: grafana-tls
     grafana:
       ingress:
@@ -62,7 +62,7 @@ spec:
         pathType: Prefix
         tls:
           - hosts:
-            - grafana.magnifikboutique.online
+            - prometheus.magnifikboutique.online
             secretName: grafana-tls
       prometheusSpec:
         externalUrl: http://prometheus.magnifikboutique.online
