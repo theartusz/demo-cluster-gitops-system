@@ -22,7 +22,7 @@ spec:
         annotations:
           kubernetes.io/ingress.class: "nginx"
           nginx.ingress.kubernetes.io/ssl-redirect: "false"
-          cert-manager.io/issuer: "letsencrypt-prod"
+          cert-manager.io/clusterissuer: "letsencrypt-prod"
         hosts:
           - alertmanager.magnifikboutique.online
         paths:
