@@ -14,3 +14,19 @@ spec:
         kind: HelmRepository
         name: argocd
         namespace: flux-system
+  values:
+    ingress:
+      enabled: true
+      annotations:
+          kubernetes.io/ingress.class: "nginx"
+          nginx.ingress.kubernetes.io/ssl-redirect: "true"
+          cert-manager.io/cluster-issuer: "letsencrypt-prod"
+      hosts:
+        - argocd.magnifikboutique.online
+      paths:
+        - /
+      pathTypes: Prefix
+      tls:
+        - hosts:
+          - argocd.magnifikboutique.online
+          secretName: argocd-tls
