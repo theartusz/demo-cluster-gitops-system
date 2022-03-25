@@ -31,7 +31,7 @@ spec:
         tls:
           - hosts:
             - alertmanager.magnifikboutique.online
-            secretName: grafana-tls
+            secretName: alertmanager-tls
     grafana:
       ingress:
         enabled: true
@@ -63,7 +63,7 @@ spec:
         tls:
           - hosts:
             - prometheus.magnifikboutique.online
-            secretName: grafana-tls
+            secretName: prometheus-tls
       prometheusSpec:
         externalUrl: http://prometheus.magnifikboutique.online
         resources:
