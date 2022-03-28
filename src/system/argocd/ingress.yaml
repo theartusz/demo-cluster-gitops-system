@@ -22,5 +22,5 @@ spec:
     host: argocd.magnifikboutique.online
   tls:
   - hosts:
-    - argocd.example.com
+    - argocd.magnifikboutique.online
     secretName: argocd-secret # do not change, this is provided by Argo CD
