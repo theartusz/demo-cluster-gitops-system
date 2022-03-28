@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: angular
-        image: argocdtest.azurecr.io/github-evry-bergen/toolbox-reference-angular:develop-e9c912dd-14 # {"$imagepolicy": "flux-system:angular"}
+        image: magnifikacr.azurecr.io/reference-angular:develop-10f2beec-16 # {"$imagepolicy": "flux-system:angular"}
         resources:
           limits:
             memory: "512Mi"
