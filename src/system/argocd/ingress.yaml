@@ -12,8 +12,10 @@ spec:
   - http:
       paths:
       - backend:
-          serviceName: argocd-server
-          servicePort: http
+          service:
+            name: argocd-server
+            port:
+              name: http
     host: argocd.example.com
   tls:
   - hosts:
