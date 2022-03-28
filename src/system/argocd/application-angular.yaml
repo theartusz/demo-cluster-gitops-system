@@ -1,0 +1,13 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: angular
+  namespace: argocd
+spec:
+  destination:
+    namespace: angular
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+    path: src/apps/angular-reference
+    repoURL: https://github.com/theartusz/demo-cluster-gitops.git
