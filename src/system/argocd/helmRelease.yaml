@@ -30,4 +30,4 @@ spec:
         tls:
           - hosts:
             - argocd.magnifikboutique.online
-            secretName: argocd-tls
+            secretName: argocd-secret
