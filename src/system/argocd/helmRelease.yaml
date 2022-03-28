@@ -27,13 +27,6 @@ spec:
             cert-manager.io/cluster-issuer: "letsencrypt-prod"
         hosts:
           - argocd.magnifikboutique.online
-        paths:
-          - backend:
-              service:
-                name: argocd-server
-                port:
-                  name: http
-            path: /
         pathType: Prefix
         tls:
           - hosts:
