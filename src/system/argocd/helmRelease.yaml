@@ -29,7 +29,6 @@ spec:
           - backend:
               serviceName: argocd-server
               servicePort: http
-        pathTypes: Prefix
         tls:
           - hosts:
             - argocd.magnifikboutique.online
