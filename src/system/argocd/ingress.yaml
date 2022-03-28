@@ -18,7 +18,7 @@ spec:
               name: http
         pathType: Prefix
         path: /
-    host: argocd.example.com
+    host: argocd.magnifikboutique.online
   tls:
   - hosts:
     - argocd.example.com
