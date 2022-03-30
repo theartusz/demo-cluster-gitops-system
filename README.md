@@ -1,4 +1,4 @@
-# demo-cluster-gitops
+# demo-cluster-system-gitops
 
 ## instructions
 after deploying the cluster:
