@@ -14,3 +14,7 @@ spec:
         kind: HelmRepository
         name: ingress-nginx
         namespace: flux-system
+  values:
+    controller:
+      service:
+        externalIPs: [51.124.232.148]
