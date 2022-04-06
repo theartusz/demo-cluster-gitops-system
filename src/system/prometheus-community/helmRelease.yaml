@@ -16,7 +16,7 @@ spec:
         name: prometheus-community
         namespace: flux-system
   values:
-    alertmanager:
+#    alertmanager:
 #      ingress:
 #        enabled: true
 #        annotations:
@@ -32,7 +32,7 @@ spec:
 #          - hosts:
 #            - alertmanager.magnifikboutique.online
 #            secretName: alertmanager-tls
-    grafana:
+#    grafana:
 #      ingress:
 #        enabled: true
 #        annotations:
