@@ -17,4 +17,4 @@ spec:
   values:
     controller:
       service:
-        externalIPs: [51.124.232.148]
+        externalIPs: [20.101.46.82]

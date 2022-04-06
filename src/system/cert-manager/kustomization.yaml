@@ -5,3 +5,4 @@ resources:
   - clusterIssuer.yaml
   - helmRelease.yaml
   - helmRepository.yaml
+  - kustomizationFlux.yaml
