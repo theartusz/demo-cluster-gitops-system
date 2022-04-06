@@ -17,4 +17,5 @@ spec:
     kind: GitRepository
     name: flux-system
   dependsOn:
+  # depends on other kustomization object
     - name: flux-system
