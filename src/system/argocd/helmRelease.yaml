@@ -16,7 +16,7 @@ spec:
         namespace: flux-system
   dependsOn:
     - name: cert-manager
-      namespace: flux-system
+      namespace: system
   values:
     server:
       extraArgs:
