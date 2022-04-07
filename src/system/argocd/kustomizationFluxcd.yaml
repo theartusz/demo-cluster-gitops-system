@@ -1,8 +1,7 @@
 #------------------------------
 # INFO
 #------------------------------
-# Kustomization to be able to insatll cert-manager resources
-# after cert-manager itself is installe using dependsOn
+# Kustomization to order the isntalation of argocd applications
 
 apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
 kind: Kustomization
@@ -11,7 +10,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 5m
-  path: "src/system/cert-manager/resources"
+  path: "src/apps"
   prune: true
   sourceRef:
     kind: GitRepository
