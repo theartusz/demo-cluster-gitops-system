@@ -19,8 +19,10 @@ spec:
       namespace: system
   values:
     server:
-      extraArgs:
-        - --insecure
+#      extraArgs:
+#        - --insecure #I actuallu might not need this
+      service:
+        type: "LoadBalancer"
       ingress:
         enabled: true
         annotations:
