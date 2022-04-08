@@ -30,7 +30,7 @@ spec:
         {{ end -}}
     push:
       branch: main
-  interval: 15m
+  interval: 1m
   update:
     path: ./src/apps
     strategy: Setters

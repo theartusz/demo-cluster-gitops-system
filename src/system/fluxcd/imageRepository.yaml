@@ -4,7 +4,7 @@ metadata:
   name: angular
   namespace: flux-system
 spec:
-  interval: 5m
+  interval: 1m
   image: magnifikacr.azurecr.io/reference-angular
   secretRef:
     name: acr-auth
