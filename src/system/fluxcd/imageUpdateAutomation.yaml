@@ -32,5 +32,5 @@ spec:
       branch: main
   interval: 1m
   update:
-    path: ./src/apps
+    path: ./angular-reference
     strategy: Setters
