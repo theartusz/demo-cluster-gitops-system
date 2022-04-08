@@ -8,3 +8,5 @@ spec:
     url: https://github.com/theartusz/demo-cluster-gitops-apps.git
     ref:
       branch: main
+    secretRef:
+      name: git-cred
