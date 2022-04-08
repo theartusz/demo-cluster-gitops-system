@@ -8,4 +8,9 @@ kubectl create secret docker-registry acr-auth --docker-server=magnifikacr.azure
 ```
 - create the same `acr-auth` dockerconfig secret in each app namespace to authenticate to container registry
 - create A record in your `dns zone` with nginx public address and ingress subdomains
-- in argoCD go to `setting` -> `repositories` and create connection to the repository you want to sync  
+- login to argocd UI with username: `admin` password: 
+```
+kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d; echo
+```
+- in argocd go to `setting` -> `repositories` and create connection to the repository you want to sync. 
+For example URL: `https://github.com/theartusz/demo-cluster-gitops-apps.git` and your github token 
