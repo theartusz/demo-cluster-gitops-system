@@ -6,7 +6,7 @@ metadata:
 spec:
   sourceRef:
     kind: GitRepository
-    name: flux-system
+    name: apps
   git:
     commit:
       author:
