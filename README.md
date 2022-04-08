@@ -8,8 +8,7 @@ kubectl create secret docker-registry acr-auth -n flux-system --docker-server=ma
 ```
 - create secret containing github credentials for ImageUpdateAutomation to make commits to repo
 ```
-k create secret generic github-cred --from-literal=username=$TF_VAR_GITHUB_OWNER --from-literal=password=$TF_VAR_GITHU
-B_TOKEN -n flux-system
+k create secret generic github-cred --from-literal=username=$TF_VAR_GITHUB_OWNER --from-literal=password=$TF_VAR_GITHUB_TOKEN -n flux-system
 ```
 
 - create A record in your `dns zone` with nginx public address and ingress subdomains
