@@ -14,7 +14,7 @@ spec:
         kind: HelmRepository
         name: ingress-nginx
         namespace: flux-system
-  values:
-    controller:
-      service:
-        loadBalancerIP: "20.101.46.82"
+#  values:
+#    controller:
+#      service:
+#        loadBalancerIP: "20.101.46.82"
