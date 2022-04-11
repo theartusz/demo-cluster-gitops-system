@@ -1,0 +1,13 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: alertmanager
+  namespace: system
+spec:
+  dnsNames:
+    - alertmanager.magnifikboutique.online
+  issuerRef:
+    kind: ClusterIssuer
+    name: letsencrypt-prod
+  secretName: alertmanager-tls
+
