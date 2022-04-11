@@ -7,4 +7,4 @@ spec:
   interval: 1m
   image: magnifikacr.azurecr.io/reference-angular
   secretRef:
-    name: acr-auth
+    name: acr-cred
