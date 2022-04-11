@@ -6,6 +6,9 @@ after deploying the cluster:
 ```
 kubectl create secret docker-registry acr-cred -n flux-system --docker-server=magnifikacr.azurecr.io --docker-username=magnifikacr --docker-password=<provide-password> --docker-email=arturferfecki@outlook.com 
 ```
+```
+ kubectl create secret docker-registry acr-cred -n angular --docker-server=magnifikacr.azurecr.io --docker-username=magnifikacr --docker-password=<provide-password> --docker-email=arturferfecki@outlook.com
+```
 - create secret containing github credentials for ImageUpdateAutomation to make commits to repo
 ```
 k create secret generic github-cred --from-literal=username=$TF_VAR_GITHUB_OWNER --from-literal=password=$TF_VAR_GITHUB_TOKEN -n flux-system
