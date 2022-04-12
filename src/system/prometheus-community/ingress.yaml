@@ -19,6 +19,6 @@ spec:
         pathType: Prefix
         backend:
           service:
-            name: argocd-server
+            name: prometheus-community-kube-prometheus
             port:
               number: 80
