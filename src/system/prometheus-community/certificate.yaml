@@ -5,7 +5,7 @@ metadata:
   namespace: system
 spec:
   dnsNames:
-    - alertmanager.magnifikboutique.online
+    - alertmanager.magnifikbutik.eu
   issuerRef:
     kind: ClusterIssuer
     name: letsencrypt-prod
@@ -19,7 +19,7 @@ metadata:
   namespace: system
 spec:
   dnsNames:
-    - grafana.magnifikboutique.online
+    - grafana.magnifikbutik.eu
   issuerRef:
     kind: ClusterIssuer
     name: letsencrypt-prod
@@ -33,7 +33,7 @@ metadata:
   namespace: system
 spec:
   dnsNames:
-    - prometheus.magnifikboutique.online
+    - prometheus.magnifikbutik.eu
   issuerRef:
     kind: ClusterIssuer
     name: letsencrypt-prod
