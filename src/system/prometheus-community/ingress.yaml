@@ -9,10 +9,10 @@ metadata:
 spec:
   tls:
   - hosts:
-    - prometheus.magnifikboutique.online
+    - prometheus.magnifikbutik.eu
     secretName: prometheus-tls
   rules:
-  - host: prometheus.magnifikboutique.online
+  - host: prometheus.magnifikbutik.eu
     http:
       paths:
       - path: /
