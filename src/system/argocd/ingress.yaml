@@ -12,7 +12,7 @@ spec:
     - argocd.magnifikbutik.eu
     secretName: argocd-secret
   rules:
-  - host: argocd.magnifikboutique.online
+  - host: argocd.magnifikbutik.eu
     http:
       paths:
       - path: /
