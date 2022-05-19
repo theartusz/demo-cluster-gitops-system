@@ -1,12 +1,12 @@
-apiVersion: cert-manager.io/v1
-kind: Certificate
-metadata:
-  name: argocd
-  namespace: argocd
-spec:
-  dnsNames:
-    - argocd.magnifikboutique.online
-  issuerRef:
-    kind: ClusterIssuer
-    name: letsencrypt-prod
-  secretName: argocd-secret
+#apiVersion: cert-manager.io/v1
+#kind: Certificate
+#metadata:
+#  name: argocd
+#  namespace: argocd
+#spec:
+#  dnsNames:
+#    - argocd.magnifikboutique.online
+#  issuerRef:
+#    kind: ClusterIssuer
+#    name: letsencrypt-prod
+#  secretName: argocd-secret
