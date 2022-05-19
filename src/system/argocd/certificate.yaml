@@ -5,7 +5,7 @@
 #  namespace: argocd
 #spec:
 #  dnsNames:
-#    - argocd.magnifikboutique.online
+#    - argocd.magnifikbutik.eu
 #  issuerRef:
 #    kind: ClusterIssuer
 #    name: letsencrypt-prod
