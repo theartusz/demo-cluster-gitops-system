@@ -10,11 +10,11 @@ metadata:
   namespace: flux-system
 spec:
   interval: 5m
-  path: "src/apps"
+  path: "apps"
   prune: true
   sourceRef:
     kind: GitRepository
     name: flux-system
   dependsOn:
   # depends on other kustomization object
-    - name: flux-system
+    - name: rest

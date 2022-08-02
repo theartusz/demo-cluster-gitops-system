@@ -18,4 +18,4 @@ spec:
     name: flux-system
   dependsOn:
   # depends on other kustomization object
-    - name: "cert-manager-resources"
+    - name: cert-manager-resources
