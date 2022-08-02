@@ -16,5 +16,3 @@ spec:
   sourceRef:
     kind: GitRepository
     name: flux-system
-  dependsOn:
-  # depends on other kustomization object
