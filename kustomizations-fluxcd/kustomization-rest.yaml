@@ -1,0 +1,21 @@
+#------------------------------
+# INFO
+#------------------------------
+# Kustomization to be able to insatll cert-manager resources
+# after cert-manager itself is installed - using dependsOn
+
+apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
+kind: Kustomization
+metadata:
+  name: rest
+  namespace: flux-system
+spec:
+  interval: 5m
+  path: "system"
+  prune: true
+  sourceRef:
+    kind: GitRepository
+    name: flux-system
+  dependsOn:
+  # depends on other kustomization object
+    - name: "cert-manager-resources"
