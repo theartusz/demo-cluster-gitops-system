@@ -6,5 +6,4 @@ resources:
   - helmRelease.yaml
   - helmRepository.yaml
   - ingress.yaml
-  - kustomizationFluxcd.yaml
   - namespace.yaml
