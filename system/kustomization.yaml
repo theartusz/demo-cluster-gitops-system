@@ -7,4 +7,3 @@ resources:
   - fluxcd
   - nginx
   - prometheus-community
-  - namespace.yaml
