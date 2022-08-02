@@ -4,4 +4,3 @@ kind: Kustomization
 resources:
   - helmRelease.yaml
   - helmRepository.yaml
-  - kustomizationFluxcd.yaml
