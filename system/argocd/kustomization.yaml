@@ -5,5 +5,5 @@ resources:
   - certificate.yaml
   - helmRelease.yaml
   - helmRepository.yaml
-  - ingress.yaml
+#  - ingress.yaml
   - namespace.yaml
