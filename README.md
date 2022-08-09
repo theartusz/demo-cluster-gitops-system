@@ -4,7 +4,7 @@
 after deploying the cluster:
 1. create `acr-auth` dockerconfig secret in `flux-system` namespace for image automation to authenticate to container registry and read tags from there
 ```
-kubectl create secret docker-registry acr-cred -n flux-system --docker-server=magnifikacr.azurecr.io --docker-username=magnifikacr --docker-password=<provide-password> --docker-email=arturferfecki@outlook.com 
+kubectl create secret docker-registry container-registry-cred -n flux-system --docker-server=magnifikacr.azurecr.io --docker-username=magnifikacr --docker-password=<provide-password> --docker-email=arturferfecki@outlook.com 
 ```
 2. create secret containing github credentials for ImageUpdateAutomation to make commits to repo
 ```
