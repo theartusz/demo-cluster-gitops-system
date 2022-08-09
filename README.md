@@ -12,7 +12,7 @@ k create secret generic github-cred --from-literal=username=$TF_VAR_GITHUB_OWNER
 ```
 
 3. create A record in your `dns zone` with nginx public address and ingress subdomains
-4. login to argocd UI with username: `admin` password: 
+4. login to argocd UI with username: `admin` and password: 
 ```
 kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d; echo
 ```
