@@ -1,0 +1,52 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: argocd-test
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: argocd-test
+subjects:
+  - kind: ServiceAccount
+    name: argocd-test
+    namespace: argocd
+
+---
+
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: argocd-test
+  namespace: argocd
+
+---
+
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  # "namespace" omitted since ClusterRoles are not namespaced
+  name: argocd-test
+rules:
+- apiGroups: ["apiextensions.k8s.io"]
+  resources: ["customresourcedefinitions"]
+  verbs: ["list", "watch"]
+
+- apiGroups: [""]
+  resources: ["namespaces"]
+  verbs: ["list"]
+
+- apiGroups: [""]
+  resources: ["secrets"]
+  verbs: ["get", "watch", "list"]
+
+- apiGroups: ["apiextensions.k8s.io"]
+  resources: ["customresourcedefinitions"]
+  verbs: ["list", "watch"]
+
+- apiGroups: [""]
+  resources: ["namespaces"]
+  verbs: ["list"]
+
+- apiGroups: ["argoproj.io"]
+  resources: ["Application"]
+  verbs: ["*"]
