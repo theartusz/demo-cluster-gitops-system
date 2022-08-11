@@ -8,7 +8,7 @@ kubectl create secret docker-registry container-registry-cred -n flux-system --d
 
 or 
 
-kubectl create secret docker-registry regcred \
+kubectl create secret docker-registry container-registry-cred \
   --docker-server=${AWS_ACCOUNT}.dkr.ecr.${AWS_REGION}.amazonaws.com \
   --docker-username=AWS \
   --docker-password=$(aws ecr get-login-password) \
