@@ -18,7 +18,7 @@ kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.pas
 ```
 or port-forward: 
 ```
-kubectl port-forward svc/argocd-server -n argocd 8080:443` 
+kubectl port-forward svc/argocd-server -n argocd 8080:443
 ```
 5. in argocd go to `setting` -> `repositories` and create connection to the repository you want to sync. 
 For example URL: `https://github.com/theartusz/demo-cluster-gitops-apps.git` and your github token 
