@@ -7,3 +7,4 @@ resources:
   - helmRepository.yaml
 #  - ingress.yaml
   - namespace.yaml
+  - RBAC.yaml
