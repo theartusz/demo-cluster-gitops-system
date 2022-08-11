@@ -47,6 +47,6 @@ rules:
   resources: ["namespaces"]
   verbs: ["list"]
 
-- apiGroups: ["argoproj.io"]
-  resources: ["Application"]
-  verbs: ["*"]
+#- apiGroups: ["argoproj.io"]
+#  resources: ["Application"]
+#  verbs: ["*"]
