@@ -37,7 +37,7 @@ spec:
 #          - hosts:
 #            - argocd.magnifikboutique.online
 #            secretName: argocd-secret
-    controller:
-      serviceAccount:
-        create: false
-        name: argocd-test
+#    controller:
+#      serviceAccount:
+#        create: false
+#        name: argocd-test
