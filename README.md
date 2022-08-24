@@ -30,7 +30,7 @@ kubectl port-forward svc/argocd-server -n argocd 8080:443
 ```
 5. in argocd go to `setting` -> `repositories` and create connection to the repository you want to sync. 
 For example URL: `https://github.com/theartusz/demo-cluster-gitops-apps.git` and your github token 
-6. create the same `acr-auth` dockerconfig secret in each app namespace to authenticate to container registry
+6. create the same `container-registry-cred` dockerconfig secret in each app namespace to authenticate to container registry
 ```
  kubectl create secret docker-registry container-registry-cred -n angular --docker-server=magnifikacr.azurecr.io --docker-username=magnifikacr --docker-password=<provide-password> --docker-email=arturferfecki@outlook.com
 ```
