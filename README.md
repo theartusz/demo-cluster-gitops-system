@@ -5,9 +5,9 @@ after deploying the cluster:
 1. create `acr-auth` dockerconfig secret in `flux-system` namespace for image automation to authenticate to container registry and read tags from there
 ```
 kubectl create secret docker-registry container-registry-cred -n flux-system --docker-server=magnifikacr.azurecr.io --docker-username=magnifikacr --docker-password=<provide-password> --docker-email=arturferfecki@outlook.com 
-
+```
 or 
-
+```
 kubectl create secret docker-registry container-registry-cred \
   --docker-server=${AWS_ACCOUNT}.dkr.ecr.${AWS_REGION}.amazonaws.com \
   --docker-username=AWS \
