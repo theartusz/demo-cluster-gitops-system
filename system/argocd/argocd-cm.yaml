@@ -1,0 +1,31 @@
+# example of OIDC configuration (using Feide as provider in this case)
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  annotations:
+    meta.helm.sh/release-name: argocd
+    meta.helm.sh/release-namespace: argocd
+  labels:
+    app.kubernetes.io/component: server
+    app.kubernetes.io/instance: argocd
+    app.kubernetes.io/managed-by: Helm
+    app.kubernetes.io/name: argocd-cm
+    app.kubernetes.io/part-of: argocd
+    helm.sh/chart: argo-cd-4.2.2
+    helm.toolkit.fluxcd.io/name: argocd
+    helm.toolkit.fluxcd.io/namespace: argocd
+  name: argocd-cm
+  namespace: argocd
+data:
+  oidc.config: |
+      name: Feide
+      issuer: https://auth.dataporten.no
+      clientID: 65af7e7a-9466-4ab7-bf83-0bea3999ea75
+      clientSecret: $oidc.feide.clientSecret
+      requestedScopes:
+          - openid
+          - profile
+          - email
+  url: https://argocd.magnifikbutik.eu
+# add https://argocd.magnifikbutik.eu/auth/callback as callback in OIDC registration
+# add https://argocd.magnifikbutik.eu/login as approved URLs in OIDC registration
